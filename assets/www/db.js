@@ -156,7 +156,7 @@ function showList(tx, result) {
 								'</tr></table>'+
 								'</a></li>');
 			}
-			else if (row['Name'] == "PrestaShop" || row['Name'] == "OpenCart" || row['Name'] == "Zencart")
+			else if (row['Name'] == "PrestaShop" || row['Name'] == "OpenCart" || row['Name'] == "ZenCart")
 			{
 				storeList.append(
 								'<li><a href="#order" onClick="loadOrderList('+"'"+row['Url']+"','"+row['Pin']+"'"+');">'+
@@ -353,7 +353,7 @@ function showEdit(tx, result) {
 function editShopSettings(editName, editUrl, editPin) {
 	var edit = $("#divEditShop");
 	edit.empty();
-	var text=	'<h3>'+editName+'</h3>'+
+	var text=	'<h3>'+editName+'</h3><hr/>'+
 				'<div data-role="fieldcontain">'+
 				'<label for="'+editName+'addressEdit">Shop address:</label>'+
 				'<input type="url" name="addressEdit" id="'+editName+'addressEdit" value="'+editUrl+'" placeholder="address" />'+		
